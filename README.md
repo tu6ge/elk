@@ -4,7 +4,7 @@
 
 ```
 http{
-  log_format json '{"domain":"$server_name",'
+  log_format json escape=json '{"domain":"$server_name",'
     '"http_x_forwarded_for":"$http_x_forwarded_for",'
     '"time_local":"$time_iso8601",'
     '"request":"$request",'
