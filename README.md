@@ -20,6 +20,28 @@ http{
 }
 ```
 
+## 前提条件
+
+电脑需要安装docker和docker-compose
+
+因为elasticsearch最低需要2G内存，由于docker默认分配给容器的内存很小，所以需要设置一下虚拟内存大小
+
+```
+sudo sysctl -w vm.max_map_count=262144
+```
+
+## 运行
+
+克隆代码后，运行
+```
+docker-compose up -d
+```
+
+查看日志，运行
+```
+docker-compose logs -f [elasticsearch,logstash,kibana]
+```
+
 ## 感谢
 
 [Hukey's Blog](https://www.cnblogs.com/hukey/p/11519612.html)
