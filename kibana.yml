@@ -1,2 +1,4 @@
+server.name: kibana
 server.host: '0.0.0.0'
 elasticsearch.url: 'http://elastic:9200'
+i18n.locale: 'zh-CN'
